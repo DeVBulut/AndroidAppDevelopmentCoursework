@@ -6,7 +6,6 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-// Adapter class for RecyclerView
 class DataModelAdapter(private val dataList: MutableList<DataModel>) :
     RecyclerView.Adapter<DataModelAdapter.DataModelViewHolder>() {
 
@@ -17,7 +16,6 @@ class DataModelAdapter(private val dataList: MutableList<DataModel>) :
         val descriptionTextView: TextView = itemView.findViewById(R.id.descriptionTextView)
     }
 
-    // Creates a new ViewHolder when needed
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DataModelViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.adapter_view_holder, parent, false)
